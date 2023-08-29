@@ -1,0 +1,111 @@
+<p><a ui-sref="doc({page: 'lib-exp.html'})">Experimental Tasks</a></p>
+<h2>Dual N Back</h2>
+
+<p>In the Dual N-Back paradigm, participants need to respond whenever the current stimulus was the same as the one presented N positions back in the sequence. Dependent measure is the proportion of hits minus false alarms averaged over both modalities and all n-back levels</p>
+
+<ul id="docPageNav">
+  <li><i class="fa fa-angle-right"></i> <a href ng-click="scrollTo('element')">Element</a></li>
+  <li><i class="fa fa-angle-right"></i> <a href ng-click="scrollTo('executable')">Executables</a></li>
+  <li><i class="fa fa-angle-right"></i> <a href ng-click="scrollTo('properties')">Properties</a></li>
+  <li><i class="fa fa-angle-right"></i> <a href ng-click="scrollTo('stimuli')">Stimuli File</a></li>
+  <li><i class="fa fa-angle-right"></i> <a href ng-click="scrollTo('download')">Download</a></li>
+</ul>
+
+<hr class="hr-red">
+
+<h3 id="element">Element<span class="pull-right"><a href ng-click="scrollTo('top')"><i class="fa fa-caret-up fa-lg"></i></a></span></h3>
+
+<p>Use a <a ui-sref="doc({page: 'ref-elements.html'})">List Element</a> as the parent element in order to create the Dual N-Back paradigm. The number of iterations should be set to the number of stimuli to be shown.</p>
+
+<hr class="hr-red">
+
+<h3 id="executable">Executables<span class="pull-right"><a href ng-click="scrollTo('top')"><i class="fa fa-caret-up fa-lg"></i></a></span></h3>
+
+<p>Use the following settings in the Module Editor for this type of task: </p>
+
+<h4>DualNBack</h3>
+<table class="table table-condensed table-bordered">
+  <tbody>
+    <tr>
+      <td class="cellB">Project</td>
+      <td>tatool-share</td>
+    </tr>
+    <tr>
+      <td class="cellB">Executable Type</td>
+      <td>DualNBack</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr class="hr-red">
+
+<h3 id="properties">Properties<span class="pull-right"><a href ng-click="scrollTo('top')"><i class="fa fa-caret-up fa-lg"></i></a></span></h3>
+
+<p>The following Properties can be provided in the Module Editor to change the behaviour of the task:</p>
+
+<table class="table table-striped table-condensed table-bordered">
+  <thead>
+    <tr>
+      <th>Property Name</th>
+      <th>Property Type</th>
+      <th>Default</th>
+      <th>Mandatory</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="cellB">stimuliFile</td>
+      <td>Resource</td>
+      <td>-</td>
+      <td class="cellB">Yes</td>
+      <td>A stimuli file expecting stimuli according to the Tatool Stimulus definition.</td>
+    </tr>
+    <tr>
+      <td class="cellB">stimuliPath</td>
+      <td>Path</td>
+      <td>-</td>
+      <td class="cellB">Yes</td>
+      <td>A stimuli path where to load any resources from (stimuli images, input key images).</td>
+    </tr>
+    <tr>
+      <td class="cellB">displayDuration</td>
+      <td>String</td>
+      <td>2000</td>
+      <td>No</td>
+      <td>The time in milliseconds to display each stimulus.</td>
+    </tr>
+    <tr>
+      <td class="cellB">nValue</td>
+      <td>String</td>
+      <td>1</td>
+      <td>No</td>
+      <td>The critical number of positions back in the sequence.</td>
+    </tr>
+    <tr>
+      <td class="cellB">iterations</td>
+      <td>String</td>
+      <td>20</td>
+      <td>No</td>
+      <td>The number of iterations as provided in the List Element. Used to assist in generating the correct number of targets.</td>
+    </tr>
+    <tr>
+      <td class="cellB">targets</td>
+      <td>String</td>
+      <td>12</td>
+      <td>No</td>
+      <td>The number of targets to be generated.</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr class="hr-red">
+
+<h3 id="stimuli">Stimuli File<span class="pull-right"><a href ng-click="scrollTo('top')"><i class="fa fa-caret-up fa-lg"></i></a></span></h3>
+<p><a href="https://raw.githubusercontent.com/tatool/tatool-web/master/app/projects/public/tatool-share/stimuli/dual-nback-permutations.csv" target="_blank">dual-nback-permutations.csv</a> contains a list of the available visual and audio stimuli.</p>
+
+<hr class="hr-red">
+
+<h3 id="download">Download<span class="pull-right"><a href ng-click="scrollTo('top')"><i class="fa fa-caret-up fa-lg"></i></a></span></h3>
+
+<p>You can access the source code (Service, Controller, Template, CSS) for both Executables in our <a href="https://github.com/tatool/tatool-web/tree/master/app/projects/public/tatool/executables" target="_blank">GitHub repository</a>.</p>

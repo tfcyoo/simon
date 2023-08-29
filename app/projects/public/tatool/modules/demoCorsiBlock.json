@@ -1,0 +1,110 @@
+{
+  "description": "Corsi Block task in which sequentially marked positions in a grid have to be memorized and later recalled.",
+  "moduleHierarchy": {
+	"label": "Task List",
+    "children": [
+      {
+        "images": {
+          "propertyValue": [],
+          "propertyType": "ArrayResource"
+        },
+        "pages": {
+          "propertyValue": [
+            {
+              "resourceType": "instructions",
+              "resourceName": "tatoolCorsiBlock.html",
+              "project": {
+                "access": "public",
+                "name": "tatool"
+              }
+            }
+          ],
+          "propertyType": "ArrayResource"
+        },
+        "project": {
+          "access": "public",
+          "name": "tatool"
+        },
+        "fixationInterval": 0,
+        "blankInterval": 0,
+        "name": "corsiInstruction",
+        "customType": "tatoolInstruction",
+        "tatoolType": "Executable"
+      },
+      {
+        "label": "corsiBlock",
+        "children": [
+          {
+            "status": {
+              "feedbackPanel": false
+            },
+            "randomisation": "full",
+            "intervalDuration": "250",
+            "displayDuration": "1000",
+            "stimuliFile": {
+              "resourceType": "stimuli",
+              "resourceName": "corsiBlock-colors.csv",
+              "project": {
+                "access": "public",
+                "name": "tatool-stimuli"
+              },
+              "propertyType": "Resource"
+            },
+            "stimuliPath": {
+              "resourceType": "stimuli",
+              "resourceName": "",
+              "project": {
+                "access": "public",
+                "name": "tatool-stimuli"
+              },
+              "propertyType": "Path"
+            },
+            "project": {
+              "access": "public",
+              "name": "tatool"
+            },
+            "fixationInterval": 0,
+            "blankInterval": "0",
+            "name": "corsiBlock",
+            "customType": "tatoolCorsiBlock",
+            "tatoolType": "Executable"
+          }
+        ],
+        "handlers": [],
+        "iterator": {
+          "numIterations": 5,
+          "customType": "ListIterator"
+        },
+        "name": "47csdnkojqq6w290",
+        "tatoolType": "List"
+      }
+    ],
+    "iterator": {
+      "numIterations": 1,
+      "customType": "ListIterator"
+    },
+    "label": "Task List",
+    "tatoolType": "List"
+  },
+  "fullscreen": false,
+  "allowEscapeKey": true,
+  "export": [
+    {
+      "enabled": true,
+      "auto": true,
+      "mode": "upload",
+      "$$hashKey": "object:19114"
+    },
+    {
+      "enabled": true,
+      "mode": "download",
+      "$$hashKey": "object:18775"
+    }
+  ],
+  "label": "demoCorsiBlock",
+  "author": "Tatool",
+  "name": "Demo: Corsi Block",
+  "exportDelimiter": ",",
+  "exportFormat": "long",
+  "moduleMaxSessions": null
+}
